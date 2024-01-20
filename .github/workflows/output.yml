@@ -10,5 +10,5 @@ jobs:
         steps:
             - name: Output GitHub Context
               run: |
-                echo "${{ toJson(github) }}"
-                echo "${{ github.event.repository.owner }}"
+                # echo "${{ toJson(github) }}"
+                echo "${{ toJson(github.event.repository.owner) }}"
