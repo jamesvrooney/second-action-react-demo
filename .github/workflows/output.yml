@@ -9,4 +9,4 @@ jobs:
 
         steps:
             - name: Output GitHub Context
-              run: echo "${{ toJson(github.event.repository.owner) }}"
+              run: echo "${{ github.event.repository.owner.login }}"
