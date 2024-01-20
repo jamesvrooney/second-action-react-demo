@@ -20,6 +20,7 @@ jobs:
               run: npm test 
     deploy:
       name: Deploy
+      needs: run_test
       runs-on: ubuntu-latest
 
       steps:
